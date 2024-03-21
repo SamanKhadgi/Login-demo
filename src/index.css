@@ -6,8 +6,89 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  box-sizing: border-box;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.page-content{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper{
+  padding: 32px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-wrapper h1{
+  margin: 0;
+  margin-bottom: 32px;
+  color: rgb(103, 103, 235);
+  text-align: center;
+}
+
+.form-wrapper label{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form-wrapper input{
+  height: 38px;
+  font-size: 16px;
+  border: 1px solid #cecece;
+  width: 100%;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.form-wrapper input:focus-visible{
+  outline: none;
+}
+.form-wrapper input:focus{
+  border: 1px solid #aaaaaa;
+}
+
+.form-wrapper p{
+  min-height: 21px;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.form-wrapper .error{
+  color: red;
+}
+
+.btn {
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 6px 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-size: 18px;
+  font-weight: 0;
+  color: white;
+  background-color: rgb(103, 103, 235);;
 }
